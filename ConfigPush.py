@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
 # Load device IPs from Excel
-df = pd.read_excel(r'C:\Users\dmckella\Desktop\WriteMem.xlsx')  # Update file name if needed
+df = pd.read_excel(r'path\to\file.xlsx')  # Update file name if needed
 
 # Lock for thread-safe printing
 print_lock = threading.Lock()
