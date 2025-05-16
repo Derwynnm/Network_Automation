@@ -4,7 +4,7 @@ from credentials import username, password, secret
 import re
 
 # Load MACs and IPs from Excel
-mac_df = pd.read_excel(r'C:\Users\dmckella\Desktop\Automation\RSTP Project\Sandbox\SBMAC.xlsx')  # Excel sheet with IP and MAC columns
+mac_df = pd.read_excel(r'path\to\file.xlsx')  # Excel sheet with IP and MAC columns
 mac_df['MAC Address'] = mac_df['MAC Address'].str.lower()
 
 # Sanitize MAC Column
